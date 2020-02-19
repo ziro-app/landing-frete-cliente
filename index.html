@@ -186,10 +186,10 @@ body{font-family: Josefin Sans;}blockquote{border-color: #4e84c2;}div[submit-suc
         <div class="mbr-row mbr-jc-c">
             <div class="title-wrap mbr-col-lg-8 mbr-col-md-8 mbr-col-sm-12 mbr-flex mbr-column mbr-jc-c">
                 <h3 class="mbr-section-title mbr-fonts-style mbr-semibold display-5">EXPERIMENTE NOSSO ROTEIRO DE ESTILO</h3>
-                <p class="mbr-text mbr-fonts-style mbr-pt-2 display-7">Fazemos curadoria das marcas do Bom Retiro que mais combinam com sua loja. Levando em conta o estilo e o preço na seleção</p>
+                <p class="mbr-text mbr-fonts-style mbr-pt-2 display-7">Fazemos curadoria das marcas do Bom Retiro que mais combinam com sua loja. Levando em conta o estilo e o preço na seleção. Envie uma mensagem e receba mais informações relacionadas a preços e estilos</p>
             </div>
             <div class="btn-wrap mbr-col-lg-4 mbr-col-md-4 mbr-col-sm-12 mbr-flex mbr-column">
-                <div class="mbr-section-btn mbr-m-auto"><a class="btn btn-md btn-warning-outline display-4" href="https://api.whatsapp.com/send?phone=551149331712">EXPERIMENTAR</a></div>
+                <div class="mbr-section-btn mbr-m-auto"><a class="btn btn-md btn-warning-outline display-4" href="https://api.whatsapp.com/send?phone=551149331712" id="whatsapp">ENVIAR MENSAGEM</a></div>
             </div>
         </div>
     </div>
@@ -284,7 +284,15 @@ body{font-family: Josefin Sans;}blockquote{border-color: #4e84c2;}div[submit-suc
                 "vars": {
                   "eventName": "clicou-dentro-carnaval.ziro.com.br"
                 }
-              }  
+			  },
+			  "envioWhatsApp": {
+				"selector":"#whatsapp",
+				  "on": "click",
+				  "request": "event",
+				  "vars": {
+					"eventName": "Clicou WhatsApp Carnaval"
+				  }
+				}  
         }
     }
     </script>
